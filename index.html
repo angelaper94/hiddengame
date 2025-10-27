@@ -29,24 +29,24 @@
       const STEPS = [
         {
           id: "step-1",
-          titolo: "Chi ha ucciso il Dottor Valenti?",
-          consegna: "Ripensa agli indizi e scrivi il nome dell'assassino.",
-          accettate: ["federica", "federica antonelli", "antonelli"],
-          descrizione: "Hai collegato accesso, opportunità e movente: Federica prepara il caffè delle 19 e altera la dose, coprendosi con il registro."
-        },
-        {
-          id: "step-2",
           titolo: "Qual è la causa del decesso?",
           consegna: "Ripensa agli indizi.",
           accettate: ["overdose", "overdose di farmaci"],
-          descrizione: "Morte per overdose: combinazione di sedativi e quadro clinico già fragile ha portato all’arresto cardio-respiratorio."
+          descrizione: "Esatto! il Dott. Valenti è morto per overdose:il quadro clinico già fragile ha portato all’arresto cardio-respiratorio."
         },
         {
-          id: "step-3",
+          id: "step-2",
           titolo: "Qual è la sostanza responsabile della morte del Dottor Valenti?",
           consegna: "Con quale sostanza è stato ucciso il dottore?",
           accettate: ["benzodiazepina", "benzodiazepine", "ansiolitico"],
-          descrizione: "Le benzodiazepine nel caffè (residui nella tazzina) hanno potenziato gli effetti e precipitato l’evento fatale."
+          descrizione: "Esatto! Le benzodiazepine nel caffè (residui nella tazzina) combinate con la terapia di fentanyl sono state fatali!"
+        },
+        {
+          id: "step-3",
+          titolo: "Chi ha ucciso il Dottor Valenti?",
+          consegna: "Ripensa agli indizi e scrivi il nome dell'assassino.",
+          accettate: ["federica", "federica antonelli", "antonelli"],
+          descrizione: "Esatto! L'assassina è Federica: distrutta dal fatto di essere stata lasciata si offre di preparare il consueto caffè delle 18:30 e vi aggiunge benzodiazepine prese dall’armadietto dei farmaci. Lorenzo resta solo e l’effetto, sommato alla terapia di fentanyl, risulta fatale."
         }
       ];
     </script>
@@ -61,8 +61,7 @@
     <section id="epilogo" class="hidden mt-10 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/60 dark:bg-slate-900/60 p-6">
       <h2 class="text-xl font-semibold">Epilogo – Risoluzione del caso</h2>
       <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">
-        Ascolta l'audio con la spiegazione finale. Assicurati che il file <code>epilogo.mp3</code> sia
-        nella stessa cartella di questa pagina.
+        L'Isp. Capo Martina Rinaldi ha un messaggio per te! 
       </p>
       <div class="mt-4">
         <audio id="epAudio" controls preload="none" class="w-full rounded-xl border border-slate-300 dark:border-slate-700">
@@ -206,4 +205,5 @@
     })();
   </script>
 </body>
+
 </html>
